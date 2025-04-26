@@ -1,0 +1,11 @@
+# تجاهل ملفات بايثون
+*.pyc
+__pycache__/
+
+# تجاهل ملفات النظام
+.DS_Store
+Thumbs.db
+
+# تجاهل مجلدات معينة
+node_modules/
+env/
