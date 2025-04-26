@@ -78,7 +78,7 @@ def add_parking_slot():
     st.session_state.parking_slots[new_slot_id] = {"is_it_available": True, "plate_number": ""}
     return f"A new parking space has been added! Number: {new_slot_id}"
 
-# Use a lambda function to display parking slots
+
 display_parking_slots = lambda: "\n".join(
     [f"Parking number {slot_id}: {'Available' if details['is_it_available'] else f'Reserved (plate number: {details['plate_number']})'}" 
      for slot_id, details in st.session_state.parking_slots.items()]
