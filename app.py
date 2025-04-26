@@ -34,7 +34,7 @@ with col1:
 # Set the title
 st.markdown("<h1>Welcome! Choose your service:</h1>", unsafe_allow_html=True)
 
-if 'parking_slots' not in st.session_state:
+if 'parking_slots' not in st.session_state:# ما يخلي الكود يكتب فوق الديكشنري كل ما حدثة صفحة االتطبيق
     st.session_state.parking_slots = {
         1: {"is_it_available": False, "plate_number": "1234"},
         2: {"is_it_available": True, "plate_number": ""},
@@ -53,7 +53,7 @@ def calculate_price(hours):
     if hours <= 1:
         return base_price
     else:
-        return base_price + (hours - 1) * (2 * base_price)
+        return (hours * base_price)
 
 def book_parking_slot(plate_number, hours):
     for slot_id, details in st.session_state.parking_slots.items():
