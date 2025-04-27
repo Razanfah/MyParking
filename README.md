@@ -12,7 +12,7 @@ A simple Streamlit app to manage parking slots, reservations, and cancellations.
 
 1. Clone the repository or download the code:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/Razanfah/MyParking.git
     ```
 
 2. Install the required packages:
